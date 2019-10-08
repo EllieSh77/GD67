@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam|Josefin+Sans|Quicksand|Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow|Be+Vietnam|Josefin+Sans|Quicksand|Work+Sans&display=swap');
+
+
+nav {
+    background-image: linear-gradient(to right, rgb #15a2b8);
+    border: none;
+}
+
+nav a {
+    font-family: 'Be Vietnam', sans-serif; 
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f8dabc;
+    border-bottom-color: #15a2b8;
+    background-color: rgb #b8f7f6;
+    border: 1px solid rgb  #17a2b8;
+}
+
+.jumbotron {
+    position: relative;
+    background: url(https://previews.123rf.com/images/romastudio/romastudio1603/romastudio160300260/54088765-healthy-food-background-studio-photo-of-different-fruits-on-white-wooden-table-high-resolution-produ.jpg);
+    background-size: cover;
+}
+
+.jumbotron-article {
+    background: url(https://iamafoodblog.com/wp-content/uploads/2018/05/salmon-meal-prep_2412w.jpg);
+    background-size: cover;
+}
+
+.jumbotron>.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(78, 78, 78, 0.849), rgba(255, 255, 255, 0.295));
+    color: rgb #251403;
+    z-index: 1;
+}
+
+.jumbotron>.inner {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+}
+
+h1,h2,h4,h5 {
+    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn {
+    border-radius: 0;
+    background-color: rgb #b8f7f6;
+    border: 1px solid rgb  #17a2b8;
+}
+
+p {
+    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Barlow', sans-serif;
+}
+
+h2,h3,h4,h5,p {
+    color: rgb #251403;
+}
+
+.card {
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px;
+    border: 1px solid  #f8dabc;
+    border-radius: 0;
+}
+
+.date {
+    font-size: 14px;
+}
+
+.logo {
+    font-size: 23px;
+    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    fill: color #15a2b8;
+}
+
+.article-container {
+    width:300px;
+    margin: 0 auto;
+    float:none;
+}
+
+.date {
+    color: #79f2ea;
+}
+
+@media(min-width:992px){
+    .article-container {
+        width:700px;
+        margin: 0 auto;
+        float:none;
+    }
+
+    .card-img-top{
+        min-height: 230px;
+    }
+}
