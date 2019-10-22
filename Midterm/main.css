@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Work+Sans:700);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  background: rgb(242, 250, 187);
+  font: .3rem;
+}
+
+section {
+  padding: 12%;
+  width: 100%;
+}
+
+section:nth-of-type(even) {
+  background: #eef7dd;
+  color: rgb(31, 32, 31);
+}
+
+p {
+  margin-bottom: 2.5em;
+  margin-top: 30px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+h2 {
+  font: 2.8rem ;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 2em;
+}
+
+h3 {
+
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+
+
+.display-4 {
+  color: rgb(2, 49, 46);
+  font: bold "Work Sans", "Arial Black", "Gadget", sans-serif;
+}
+
+.lead {
+  color: rgb(1, 29, 26);
+  font: "Work Sans", "Arial Black", "Gadget", sans-serif;
+  padding: 20px;
+}
+
+.card-text {
+  margin: -2px;
+}
+
+.col-md {
+  max-width: 50rem;
+  margin: 20px;
+}
+
+.form-control-plaintext {
+  font-size: 2.6rem/1.55;
+  color: rgb(4, 41, 33);
+}
+
+.btn {
+  font: 2.6rem/1.55 "Adobe Garamond Pro", "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
+  color: rgb(1, 54, 52);
+}
