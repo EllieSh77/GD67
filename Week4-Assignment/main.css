@@ -12,7 +12,7 @@ nav a {
     font-family: 'Quicksand', sans-serif;
     font-family: 'Work Sans', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #f8dabc;
+    background-color: #1b1f2b;
     border-bottom-color: #15a2b8;
     background-color: rgb #b8f7f6;
     border: 1px solid rgb  #17a2b8;
@@ -20,12 +20,12 @@ nav a {
 
 .jumbotron {
     position: relative;
-    background: url(https://lh5.googleusercontent.com/vUXsscobIsZArSdBTOzJWR04O9EtpSVaFLkqn-j5NGiaRpMxEYrOd76dPEPSpSXeANp2giuQSG3G8mWZdkigIxpHPyyN5K_2zPlpA4BSiKk0hVY7HPLWAfR6L8BmkXlCet0ppmLD);
+    background: url();
     background-size: cover;
 }
 
 .jumbotron-article {
-    background: url(https://static.wixstatic.com/media/31167b_82867a09864d4408a0f3f763388e5c27~mv2.jpg/v1/fill/w_1000,h_667,q_85,usm_0.66_1.00_0.01/31167b_82867a09864d4408a0f3f763388e5c27~mv2.jpg);
+    background: url(https://www.gohawaii.com/sites/default/files/styles/image_gallery_bg_xl/public/hero-unit-images/11258-Haleakala%20Sunrise-Maui.jpg?itok=AL0BfhDy);
     background-size: cover;
 }
 
@@ -75,14 +75,14 @@ p {
 }
 
 h2,h3,h4,h5,p {
-    color: rgb #251403;
+    color: rgb #1d1105;
 }
 
 .card {
     margin: 0 auto; 
     float: none; 
     margin-bottom: 10px;
-    border: 1px solid  #f8dabc;
+    border: 1px solid  #d5f5fa;
     border-radius: 0;
 }
 
