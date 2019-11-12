@@ -40,16 +40,29 @@ init();
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext('2d');
 
-        ctx.fillStyle = "#bca079";
+        ctx.fillStyle = "#d5f9f9";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         ctx.shadowBlur = 10;
         ctx.shadowOffsetX = 6;
-        ctx.shadowColor = "#f6d2bf";
-        ctx.fillStyle = "#f0e9c0";
-        ctx.fillRect(40, 40, 300, 250);
+        ctx.shadowColor = "#8f8578";
+        ctx.fillStyle = "#fbf7de";
+        ctx.fillRect(40, 40, 300, 300);
 
         ctx.font = "34px Arial";
-ctx.strokeText("Cabo San Lucas", 65, 160);
+ctx.strokeText("Cabo San Lucas", 65, 180);
+
+
+
+//draw 
+ctx.beginPath();
+ctx.moveTo(0, 600);
+ ctx.fillRect(25, 25, 100, 100);
+ctx.clearRect(45, 45, 60, 60);
+ ctx.strokeRect(50, 50, 50, 50);
+        
+      
+      
+      
 
 
