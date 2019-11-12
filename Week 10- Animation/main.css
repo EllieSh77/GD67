@@ -1,6 +1,6 @@
 .jumbotron {
     background-image: radial-gradient(cornsilk, lightgreen, cornflowerblue);
-    opacity: 0.5;
+    
 
 }
 
@@ -15,19 +15,6 @@
     animation: mymove 5s infinite;
 }
 
-
-@-webkit-keyframes mymove {
-    50% {
-        font-size: 40px;
-    }
-}
-
-/* Standard syntax */
-@keyframes mymove {
-    50% {
-        font-size: 40px;
-    }
-}
 
 
 
@@ -44,20 +31,6 @@
    
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    0% {
-        object-position: 0% 0%;
-    }
-
-    25% {
-        object-position: 20% 0%;
-    }
-
-    100% {
-        object-position: 100% 100%;
-    }
-}
 
 /* Standard syntax */
 @keyframes mymove {
@@ -75,26 +48,17 @@
 }
 
 #myDIV {
-    height: 1600px;
-    width: 1200px;
+    height: 1000px;
+    width:400px;
     background-color: cornsilk;
     color: cornflowerblue;
-    -webkit-animation: mymove 5s infinite;
-    /* Chrome, Safari, Opera */
-    animation: mymove 5s infinite;
+    -webkit-animation: mymove 15s infinite;
+    /* Chrome, Safari, Opera */animation: mymove 5s infinite;
     position: relative;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    50% {
-        height: 500px;
-    }
-}
-
-/* Standard syntax */
-@keyframes mymove {
-    50% {
-        height: 500px;
-    }
-}
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }

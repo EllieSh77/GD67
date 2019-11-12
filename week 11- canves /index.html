@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+</head>
+
+<body>
+        <p>Cabo San lucas</p>
+        <img id="ocean-cabosanlucas-mexico" src="https://www.nationalgeographic.com/content/dam/travel/Guide-Pages/north-america/ocean-cabosanlucas-mexico.adapt.1900.1.jpg" alt="The Scream" width="220" height="277">
+        
+        <p>Canvas to fill:</p>
+        <canvas id="myCanvas" width="600" height="700"
+        style="border:1px solid #f9bfe7;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        
+        <p><button onclick="myCanvas()">Try it</button></p>
+        
+        <script>
+        function myCanvas() {
+          var c = document.getElementById("myCanvas");
+          var ctx = c.getContext("2d");
+          var img = document.getElementById("ocean-cabosanlucas-mexico");
+          ctx.drawImage(img,10,10);
+        }
+        </script>
+        
+
+    <canvas id="myCanvas" width="600" height="700">
+            This webpage used HTML canvas - Please load in a newer broser.
+            
+            
+    </canvas>
+
+    <canvas id="canvas2" width="600" height="800">
+            This webpage used HTML canvas - Please load in a newer broser.
+        </canvas>
+    <script src="canvas.js"></script>
+    <body onload="draw();">
+       <canvas id="canvas" width="600" height="600"></canvas>
+
+    <canvas id="myCanvas">
+      This is supposed to be an interactive Canvas. Please use a newer browser!
+    </canvas>
+
+    <script>
+      function draw() {
+        var canvas = document.getElementById('canvas');
+        if (canvas.getContext) {
+          var ctx = canvas.getContext('2d');
+          ctx.fillRect(25, 25, 100, 100);
+          ctx.clearRect(45, 45, 60, 60);
+          ctx.strokeRect(50, 50, 50, 50);
+        }
+      }
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+      ctx.fillStyle = "#FFFFFF";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#FFa099";
+      ctx.fillRect(20, 100, 150, 100);
+      ctx.font = "24px Helvetica";
+      ctx.textAlign = "center";
+     ctx.fillText("This is my text", canvas.width / 2, canvas.height / 2);
+      
+    </script>
+</body>
+
+</html>

@@ -9,22 +9,25 @@
     <!--boostrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Carousel CSS-->
+    <link href="https://getbootstrap.com/docs/4.3/examples/carousel/carousel.css" rel="stylesheet">
+    <!--Custom CSS-->
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <title>Cylinder Inc Homemade Saup</title>
+    <title>Cylinder Inc Homemade Soap</title>
 </head>
 
 <body>
 
+    <header>
     <!--Navbar start-->
-
     <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                <div class="col-sm-8 col-md-7 py-2">
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-light">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link disabled " href="index.html">Home</a>
@@ -59,63 +62,66 @@
     
     <!-- navbar end-->
     
-    <!--Start Carousel-->
-    <main>
+    <!--Start Carousel 
+    <div class="container-fluid carousel-holder no-padding"> -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns=img src="img/Carousel 1.jpg"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                    <div class="container">
+                    <img src="img/Carousel 1.jpg" class="img-fluid d-block align-center" alt="Responsive image"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+                   
                         <div class="carousel-caption text-left">
                             <h1>Cylinder Inc Homemade Soaps</h1>
                             <p>Alright, they’re cool, but they aren’t the lotion you’re used to. So how do you use a
                                 hard lotion?!</p>
-                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Buy It Today</a></p>
-                            </div>
-                          </div>
+                            <p><a class="btn btn-lg btn-info" href="#" role="button">Buy it today</a></p>
                         </div>
-                        <div class="carousel-item">
-                                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns=img src="img/Carousel 2.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                                <div class="container">
-                                  <div class="carousel-caption">
-                                        <h1>Lotion Bar Recipes to the rescue!</h1>
-                  <p>Homemade lotion bars are solid at room temperature, and are activated by the warmth of
-                        your skin.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    
                 </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns=img src="img/Carousel 3.jpg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                    <div class="container">
-                      <div class="carousel-caption text-right">
+                <div class="carousel-item">
+                    <img src="img/Carousel 2.jpg" class="img-fluid d-block align-center" alt="Responsive image"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+                  		 
+                        <div class="carousel-caption">
+                            <h1>Lotion Bar Recipes to the rescue!</h1>
+                            <p>Homemade lotion bars are solid at room temperature, and are activated by the warmth of
+                                your skin.</p>
+                            <p><a class="btn btn-lg btn-info" href="#" role="button">Try it out</a></p>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carousel 3.jpg" class="img-fluid d-block align-center text-dark" alt="Responsive image"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img" />
+                    	
+                        <div class="carousel-caption">
                             <h1>The most perfect of gifts</h1>
                             <p>This makes them extremely portable and easy to use</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                          </div>
+                            <p><a class="btn btn-lg btn-info" href="#" role="button">check it out today</a></p>
                         </div>
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                          </a>
-                        </div>
-</main>
+                    
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+		
+    <!--</div>-->
 
-    <!--End Carousel-->
-
-
-    <!-- Alert Start-->
+    <!--End Carousel  -->
+	
+    <!-- Alert Start -->
     <div class="alert alert-light alert-dismissible fade show" role="alert">
         <strong>The most perfect of gifts,</strong> If you have any questions about our Lotions Bars Recipes to the
         rescue feel free! <a href="#">click here for submit</a>
@@ -123,16 +129,18 @@
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-    <!--Alert End-->
+   
 
     <section id="home">
         
         <h1 class="display-4 text-center">Homemade Body Soaps</h1>
         
-         <h1 class="display text-center text-dark"><p>Made with vegetable base with olive oil, this solid soap is milled three times to make its lather rich and creamy. Leave a bar of soap in your bathtub, shower, and sink for head to toe clean.</p></h1>
+         <h1 class="subhead text-center txt-medium">Made with vegetable base with olive oil, this solid soap is milled 
+         three times to make its lather rich and creamy. Leave a bar of soap in your bathtub, shower, and sink for head to toe clean.</h1>
     </section>
+    
     <div class="container"></div>
-    <h2 class="display text-center text-dark">Featured Clients</h2>
+    <h2 class="display text-center">Featured Clients</h2>
     
             <div class="row">
                 <div class="col-md order-md-2 mr-3">
@@ -146,7 +154,6 @@
                     <img src="img/homemade_soap.jpg" class="d-block w-100" alt="Claudia's Handcraft Soap">
                 </div>
             </div>
-        </div>
     
 
         <table class="table table-striped">
@@ -176,12 +183,13 @@
             </tbody>
         </table>
 
-        <section id="subscribe">
+        <section id="subscribe" class="subscribe-form">
         <div class="container">
-                <p>Please subscribe to receive special offers.</p>
+        <form>
+            <p class="text-med">Please subscribe to receive special offers.</p>
         <input type="text" id="defaultSubscriptionFormPassword" class="form-control-plaintext mb-4" placeholder="Name">
         <input type="email" id="defaultSubscriptionFormEmail" class="form-control-plaintext mb-4" placeholder="E-mail">
-        <div class="text-center">
+        <div class="text-left">
             <a href="" class="btn" data-toggle="modal" data-target="#centralModalSuccess">Submit</a>
         </div>
         <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -197,25 +205,23 @@
                     </div>
                     <div class="modal-body">
                         <div class="text-center">
-                            <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
-                            <p>Check your email address to confirm your subscription to Cylinder Inc Homemade Saup.
-                            </p>
+                            <i class="fas fa-check fa-4x mb-3 animated rotateIn">
+                            <p>Check your email address to confirm your subscription to Cylinder Inc Homemade Soap.
+                            </p></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         </form>
+    </div>
     </section>
-    </div>
-    </div>
-    </div>
 
     <!-- FOOTER -->
 
     <footer class="container">
-        <p class="float-right text-dark"><a href="#">Back to top</a></p>
-        <p class="float-left text-dark">&copy;Cylander Inc 2019&middot;</p>
+        <p class="float-right text-light"><a href="#">Back to top</a></p>
+        <p class="float-left text-light">&copy; Cylander Inc 2019. All rights reserved.</p>
     </footer>
 
 

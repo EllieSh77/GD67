@@ -9,80 +9,148 @@
   -webkit-font-smoothing: antialiased;
 }
 
-html {
-  font-size: 15px;
-}
+html { font-size: 15px; }
 
-body {
-  background: rgb(242, 250, 187);
-  font: .3rem;
-}
+body { padding: 0; margin: 0;
+  background: rgb(240, 233, 192);
+  font: .3rem; }
 
-section {
-  padding: 12%;
+
+footer.container { width:100%; min-width:100%; height:70px; margin:0; padding-left:40px; padding-right:40px; background-color:#393527; }
+
+#navbarHeader {  margin:0;   }
+div.navbar.bg-dark { background-color:#393527 !important; }
+div.collapse.bg-dark { background-color:#393527 !important; }
+nav.navbar.navbar-expand-sm.bg-dark.navbar-light { background-color:rgb(112, 99, 76) !important; }
+
+main { max-height:20rem; min-height:16rem; background-color:rgba(0,0,0,0.15); position:relative;  }
+div.alert { margin-top:0.4em; width:90%; margin-left:auto; margin-right:auto; }
+
+				
+section { margin:0 0 0 0; padding:1% 6% 1% 6%;
+	width: 100%; }
+
+section.subscribe-form { background: rgb(112, 99, 76); 
+	max-width:80%; margin-left:auto; margin-right:auto;
+	color: rgb(36, 32, 25); }
+#subscribe form input { background-color:#fff; }
+
+p { margin-bottom: 0.5em; margin-top: 0.5em; }
+p.text-med { font-size:1.6em; }
+a { color: inherit; text-decoration: none; }
+
+h1 { margin-bottom:0.2em; margin-top:0.2em; padding-top:0; }
+h2 { font-size: 2.1rem; letter-spacing:6px; color:rgba(158,123,93,1.00);
+    text-transform:uppercase; margin-bottom:0.5em; margin-top:1em; }
+h3 { text-transform: uppercase;
+  margin-bottom: 1.8em; text-align: center; }
+
+.txt-medium { color:rgba(114,111,108,1.00); font-weight:normal; }
+
+.display-4 { color: rgb(82, 69, 56); }
+.subhead { font-size:1.9em; margin-left:10%; margin-right:10%;}
+
+.lead { color: rgb(1, 29, 26); padding: 20px; }
+
+.card-text { margin: -2px; }
+
+.col-md { max-width: 50rem; margin: 20px; }
+
+.form-control-plaintext { font-size: 2.6rem/1.55; color: rgb(4, 41, 33); }
+
+.btn { font: 2.4rem/1.95rem "Adobe Garamond Pro", "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
+  color: #fff; padding:0.7rem 1rem 1rem 1rem; }
+
+.btn-lg  { background-color: #e0d384; border-color:#e0d384; }
+.btn-lg:hover  { background-color: #534d33; border-color:#534d33; }
+
+table.table-striped { max-width:80%; margin-left:auto; margin-right:auto; border:0;
+	 background-color:rgba(255,255,255,0.70); }
+
+/* CAROUSEL */
+
+.overlay {
+  position: absolute;
+  background-color: #cff0e5;
+  height: 100%;
   width: 100%;
-}
-
-section:nth-of-type(even) {
-  background: #eef7dd;
-  color: rgb(31, 32, 31);
-}
-
-p {
-  margin-bottom: 2.5em;
-  margin-top: 30px;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
 }
 
 
-h2 {
-  font: 2.8rem ;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  margin-bottom: 2em;
+
+.carousel-inner { position:relative; height:24rem; margin-bottom: 0em; overflow: hidden; }
+
+@media screen and (max-width:1200px) {
+	.carousel-inner { position:relative; height:19rem; }
+}
+@media screen and (max-width:1000px) {
+	.carousel-inner { position:relative; height:17rem; }
+	p { margin-bottom: 0.3em; margin-top: 0.3em; font-size:0.6em; }
+	a { color: inherit; text-decoration: none; }
+	h1 { margin-bottom:0.1em; margin-top:0.2em; font-size:1.6em; }
+	.btn { font: 1.6rem/1.75rem; padding:0.5rem 0.8rem 0.8rem 0.8rem; }
+  }
+@media screen and (max-width:800px) {
+	.carousel-inner { position:relative; height:16rem; }
+	.carousel-item > img { overflow:hidden; height:100%; width:auto; min-width:840px; }
+	p { margin-bottom: 0.3em; margin-top: 0.3em; font-size:0.5em; }
+	.btn { font: 1.1rem/1.25rem; padding:0.4rem 0.3rem 0.3rem 0.3rem; }
+
+}
+@media screen and (max-width:700px) {
+  p { margin-bottom: 0.6em; margin-top: 0.6em; font-size:1em; }
+
+
 }
 
-h3 {
+.carousel-item > img { overflow: hidden; height:auto; min-height:250px; 
+/*position:absolute; top: 0; left: 0;
+  max-width: 100%; height:100%; */ }
+  
+.carousel-caption { 
+ 	top: 0rem; bottom:0px; padding:0; margin-top:3rem;
+  text-align: right; z-index: 10;
+  text-shadow: 1px 1px 7px rgba(27,26,22,0.90); }
 
-  text-transform: uppercase;
-  margin-bottom: 2em;
+
+
+
+/*  source styles from remote carousel style sheet
+.carousel { position: relative; }
+
+.carousel.pointer-event { touch-action: pan-y; }
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  @include clearfix();
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  backface-visibility: hidden;
+  @include transition($carousel-transition);
+}  
+
+.carousel-caption {
+  position: absolute;
+  right: (100% - $carousel-caption-width) / 2;
+  bottom: 20px;
+  left: (100% - $carousel-caption-width) / 2;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $carousel-caption-color;
   text-align: center;
 }
 
 
-
-.display-4 {
-  color: rgb(2, 49, 46);
-  font: bold "Work Sans", "Arial Black", "Gadget", sans-serif;
-}
-
-.lead {
-  color: rgb(1, 29, 26);
-  font: "Work Sans", "Arial Black", "Gadget", sans-serif;
-  padding: 20px;
-}
-
-.card-text {
-  margin: -2px;
-}
-
-.col-md {
-  max-width: 50rem;
-  margin: 20px;
-}
-
-.form-control-plaintext {
-  font-size: 2.6rem/1.55;
-  color: rgb(4, 41, 33);
-}
-
-.btn {
-  font: 2.6rem/1.55 "Adobe Garamond Pro", "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
-  color: rgb(141, 165, 164);
-}
-
-
+*/
