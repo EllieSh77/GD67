@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
+
+h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Yeseva One', cursive;
+
+    animation: h1move 5s forwards;
+}
+
+@keyframes h1move {
+    0% {
+        letter-spacing: 10px;
+    }
+
+    100% {
+        letter-spacing: 25px;
+        color: pink;
+    }
+}
+
+
+.square {
+    background-color: white;
+    height: 300px;
+    box-shadow: 4px 5px 9px rgb(222, 222, 222);
+    border-radius: 7px;
+    position: relative;
+}
+
+#s1 {
+    background-color: cornflowerblue;
+
+    animation: s1move 1s ease-in;
+}
+
+#s2 {
+    background-color: pink;
+
+    animation: s2move 1s ease-in 0.8s forwards;
+    width: 0px;
+}
+
+#s3 {
+    background-color: rgb(255, 243, 197);
+
+    animation: s3move 1s ease-in 1.7s forwards;
+    width: 0px;
+}
+
+@keyframes s1move {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes s2move {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes s3move {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -40px;
+    color: transparent;
+    font-family: 'Yeseva One', cursive;
+
+    animation: pmove 2s 3s forwards;
+}
+
+@keyframes pmove {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+
+#s4 {
+    background-color: lightskyblue;
+
+    animation: s4move 2s ease-in 5s forwards;
+    height: 0px;
+}
+
+@keyframes s4move {
+    0% {
+        height: 0px;
+    }
+    50% {
+        height: 350px;
+    }
+
+    100% {
+        height: 300px;
+    }
+}
