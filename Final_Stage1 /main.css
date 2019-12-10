@@ -2,7 +2,7 @@
 
 body {
   padding-top: 116px;
-  font-family: 'Over the Rainbow', cursive;
+  font-family: 'Cozy Cafe', cursive;
 }
 
 h3 {
@@ -726,3 +726,4 @@ figure.effect-bubba:hover figcaption::after {
   position: fixed;
   z-index: 999;
 }
+

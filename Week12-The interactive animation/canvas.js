@@ -55,12 +55,21 @@ function animate(event){
 
 animate();
 
+//Ball color change
+function randColor(){
+
+
+
+
+
+}
+
 
 //Score counter
 
 ctx.font = "bold 15px Tahoma";
-    ctx.fillStyle = "#ff3c00";
-    ctx.fillText("SCORE: ", 150, 580);
+ ctx.fillStyle = "#ff3c00";
+ ctx.fillText("SCORE: ", 150, 580);
 
 canvas.addEventListener("click", function(event){
 
@@ -94,6 +103,7 @@ canvas.addEventListener("click", function(event){
 
 
 //Ball size increase/decrease 
+
 
 canvas.addEventListener("click", function(event){
 

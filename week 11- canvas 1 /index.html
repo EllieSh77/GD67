@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas</title>
+</head>
+
+<body>
+  <p>Cabo San lucas</p>
+  <img id="ocean-cabosanlucas-mexico"
+    src="https://www.nationalgeographic.com/content/dam/travel/Guide-Pages/north-america/ocean-cabosanlucas-mexico.adapt.1900.1.jpg"
+    alt="The Scream" width="220" height="277">
+
+  <p>Canvas to fill:</p>
+  <canvas id="myCanvas" width="600" height="700" style="border:1px solid #f9bfe7;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+
+  <p><button onclick="myCanvas()">Try it</button></p>
+
+  <script>
+    function myCanvas() {
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      var img = document.getElementById("ocean-cabosanlucas-mexico");
+      ctx.drawImage(img, 20, 20);
+    }
+  </script>
+
+
+  <canvas id="myCanvas" width="600" height="800">
+    This webpage used HTML canvas - Please load in a newer broser.
+  </canvas>
+
+  <canvas id="canvas2" width="600" height="800">
+    This webpage used HTML canvas - Please load in a newer broser.
+  </canvas>
+
+  <script src="canvas.js"></script>
+
+  <body onload="draw();">
+
+    <canvas id="canvas" width="800" height="800"></canvas>
+    <canvas id="myCanvas">
+      This is supposed to be an interactive Canvas. Please use a newer browser!
+    </canvas>
+
+
+  </body>
+
+</html>

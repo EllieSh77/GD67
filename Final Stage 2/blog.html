@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,600|Righteous&display=swap|Open+Sans:400,600,700,800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Coustard:400,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
+
+
+    <!-- JS -->
+    <script src="https://unpkg.com/konva@4.0.18/konva.min.js"></script>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+    <title>Ellie Shahriari / Web 3 / Final / Cozy Cafe </title>
+</head>
+
+
+<body>
+
+    <header>
+
+        <!--NAVBAR-->
+
+        <nav class="navbar navbar-expand-md navbar-dark shadow-sm" style="background-color: #292621; ">
+            <!--<a class="navbar-brand p-0" href="#">CozyCafe</a>-->
+            <a href="index.html"></a><img src="images/LogoCozyCafe.png" width="173" height="120" class="d-inline-block align-top"
+                alt="Cozy Cafe" ></a>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="item.html">Shop</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+
+            <!--CART-->
+            <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart"></i><span id="cartItems"
+                            class="pl-1">0</span></a>
+                </div>
+
+            <!--TOGGLER-->
+            <div class="navbar-nav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-mug-hot fa-lg gray"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!--START MAIN CONTENT-->
+    <main>
+
+            <div class="container">
+                <header class="blog-header py-3">
+                <div class="nav-scroller py-1 mb-2">
+                    <nav class="nav d-flex justify-content-between">
+                        <a class="p-2 text-muted" href="#">Beans</a>
+                        <a class="p-2 text-muted" href="#">Recipes</a>
+                        <a class="p-2 text-muted" href="#">Products</a>
+                        <a class="p-2 text-muted" href="#">Health</a>
+                        <a class="p-2 text-muted" href="#">Opinion</a>
+                        <a class="p-2 text-muted" href="#">Science</a>
+                        <a class="p-2 text-muted" href="#">Nature</a>
+                        <a class="p-2 text-muted" href="#">Style</a>
+                        <a class="p-2 text-muted" href="#">Pastry</a>
+                    </nav>
+                </div>
+                <!--Jumbotron-->
+    <div class="container">
+            <div class="jumbotron jumbotron-fluid p-4 p-md-5 text-black rounded bg-dark" id="jumbo">
+                <div class="row">
+                    <div class="col mt-5 mb-5">
+                    </div>
+                </div>
+                <div class="col-md-6 px-0">
+                        <h1 class="display-4 ">The birth of cozy Cafe is a total relection of the quality,
+                                experience and values of cozy Cafe</h1>
+                            <p class="lead my-3">For nearly a century, This coffee shop has delivered top‑quality
+                                brewed‑beverage products and equipment to where America lives, works and plays.</p>
+                    <h1 class="display-4 mt-5 pt-5">Editor's Picks</h1>
+                    <p class="lead mb-0 mt-4"><a href="#" class="text-black font-weight-bold">Continue reading...</a></p>
+                </div>
+            </div>
+    <!--End Jumbotron-->
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2" id="update">Update</strong>
+                            <h3 class="header mb-0">Coming January 2020</h3>
+                            <div class="mb-1 text-muted">01/01/20</div>
+                            <p class="card-text mb-auto">The birth of cozy Cafe is a total relection of the quality!</p>
+                            <a href="#" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="images/Blog-1.jpg" width="200" height="250">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                        <div
+                            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <strong class="d-inline-block mb-2" id="update">Update</strong>
+                                <h3 class="header mb-0">Our Top Quality</h3>
+                                <div class="mb-1 text-muted">11/02/19</div>
+                                <p class="mb-auto">Cozy Cofe has a top‑quality delivery!</p>
+                                <a href="#" class="stretched-link">Continue reading</a>
+                            </div>
+                            <div class="col-auto d-none d-lg-block">
+                                <img src="images/Blog-2.jpg" width="200" height="250">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <main role="main" 
+            class="container">
+                    <div class="row">
+                        <div class="col-md-8 blog-main mb-5">
+            
+                            <div class="blog-post">
+                                <h2 class="blog-post-title">Top Sellers 2019</h2>
+                                <p class="blog-post-meta">10/30/19 by <a href="#">Mark</a></p>
+            
+                                <p class="blogwords">This is a blog post that talks about the best selling our products of 2019.</p>
+                               
+                                <img src="images/Brew-Kits-product1.jpg">
+
+                                <p class="blogwords">Serving up authentic espresso experience plus over 18 different 
+                                        lavors of thick hot chocolate 35 different teas and healthy, organic
+                                            options for breakfas, lunch and dinner. A traditional Italian coffee shop 
+                                            or the”in” place to meet. A quick coffee or half an hour with friends.
+                                            the place just round the corner The Highland park. From Conegliano Veneto
+                                            to Europe and beyond.</p>
+                                            <a href="products.html" class="btn btn-outline-warning btn-block btn-sm mb-5">Go to Product Page</a>
+                               
+                                </blockquote>
+                                <h3 class="subhead">Best Seller</h3>
+                                <img src="images/Coffee-Product-2.jpg">
+                                <p class="blogwords">This Cozy Cafe is a new initiative that 
+                                        once again shows the commitmentand desire of our company to 
+                                        expand its horizons. The birth of cozy Cafe is  a total relection of the quality,
+                                        experience and values of cozy Cafe.For nearly a century, This coffee shop has 
+                                        delivered top‑quality brewed‑beverage products and equipment to where America lives, works and plays. </p>
+                                <a href="products.html" class="btn btn-outline-warning btn-block  mb-5">Go to Product Page</a>
+                                <h3 class="subhead">Second Best Seller</h3>
+                                <img src="images/Carousel-3-Handmade cup-product-3.jpg">
+                                <p class="blogwords">Our coffee and tea menu features the most popular brands and brewing options including
+                                     single‑cup, roast and ground, and whole bean — perfect for your employees’ and guests’ wide range of brewed‑beverage preferences. </p>
+                                     <a href="products.html" class="btn btn-outline-warning btn-block  mb-5">Go to Product Page</a>
+                                <h3 class="subhead">Third Best Seller</h3>
+                                <img src="images/Handmade-Cup-Product-3.jpg">
+                                <p class="blogwords"> Now, with Coffee Service by Cozy Cofe, it’s never been easier to customize a beverage 
+                                    program for delivery to your establishment or to purchase your favorite products online.</p>
+                                    
+                                        <a href="products.html" class="btn btn-outline-warning btn-block  mb-5">Go to Product Page</a>
+                            
+        
+
+                        <div class="blog-post">
+                            <h2 class="blog-post-title">Another Blog Post About Espresso</h2>
+                            <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+
+                            <p>Serving up authentic espresso experience plus over 18 different
+                                lavors of thick hot chocolate, 35 different teas and healthy, organic
+                                options for breakfas, lunch and dinner. A traditional Italian coffee shop
+                                or the”in” place to meet. A quick coffee or half an hour with friends.
+                                the place just round the corner The Highland park. From Conegliano Veneto
+                                to Europe and beyond. This Cozy Cafe is a new initiative that
+                                once again shows the commitmentand desire of our company to
+                                expand its horizons.</p>
+                            <hr>
+                            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur
+                                ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+                                vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit
+                                amet fermentum.</p>
+                            <blockquote>
+                                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna
+                                        mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut
+                                    id elit.</p>
+                            </blockquote>
+                            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus
+                                sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        </div>
+                        <!-- /.blog-post -->
+
+                        <div class="blog-post mb-5 mt-5">
+                            <h2 class="blog-post-title">Different Beans</h2>
+                            <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+                            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur
+                                ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+                                vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit
+                                amet fermentum.</p>
+                            <blockquote>
+                                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna
+                                        mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut
+                                    id elit.</p>
+                            </blockquote>
+                            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus
+                                sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est
+                                non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi
+                                leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                        </div>
+                        <!-- /.blog-post -->
+
+                        <div class="blog-post mb-5 mt-5">
+                            <h2 class="blog-post-title">New Feature </h2>
+                            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis
+                                euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                                fermentum massa justo sit amet risus.</p>
+                            <ul>
+                                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                                <li>Donec id elit non mi porta gravida at eget metus.</li>
+                                <li>Nulla vitae elit libero, a pharetra augue.</li>
+                            </ul>
+                            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus
+                                sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra
+                                augue.</p>
+                        </div>
+                        
+                    </div><!-- /.blog-post -->
+
+                    <nav class="blog-pagination mb-5">
+                      <a class="btn btn-outline-warning" href="#">Older</a>
+                      <a class="btn btn-warning disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+                    </nav>
+              
+                  </div>
+                  
+                  <!-- /.blog-main -->
+              
+                  <aside class="col-md-4 blog-sidebar">
+                    <div class="p-4 mb-3 bg-light rounded">
+                      <h4 class="font-italic">About</h4>
+                      <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                    </div>
+              
+                    <div class="p-4">
+                      <h4 class="font-italic">Archives</h4>
+                      <ol class="list-unstyled mb-0">
+                        <li><a href="#">March 2014</a></li>
+                        <li><a href="#">February 2014</a></li>
+                        <li><a href="#">January 2014</a></li>
+                        <li><a href="#">December 2013</a></li>
+                        <li><a href="#">November 2013</a></li>
+                        <li><a href="#">October 2013</a></li>
+                        <li><a href="#">September 2013</a></li>
+                        <li><a href="#">August 2013</a></li>
+                        <li><a href="#">July 2013</a></li>
+                        <li><a href="#">June 2013</a></li>
+                        <li><a href="#">May 2013</a></li>
+                        <li><a href="#">April 2013</a></li>
+                      </ol>
+                    </div>
+              
+                    <div class="p-4">
+                      <h4 class="font-italic">Elsewhere</h4>
+                      <ol class="list-unstyled">
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                      </ol>
+                    </div>
+                  </aside><!-- /.blog-sidebar -->
+              
+                </div><!-- /.row -->
+              
+              </main><!-- /.container -->
+
+
+            <!--FOOTER Start-->
+
+    <footer class="container py-5 " style="background-color: #292621;">
+            <div class="row">
+                <div class="col-12 col-md text-center text-light">
+                    <img src="images/LogoCozyCafe2.png" width="70" height="48"></img>
+                    <small class="d-block mb-3 text-muted">© 2019-2020</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="footerH">Browse</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="products.html">Products</a></li>
+                        <li><a class="text-muted" href="index.html">Most Popular</a></li>
+                        <li><a class="text-muted" href="blog.html">Newest Designers</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="footerH">Account</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="index.html">Create Account</a></li>
+                        <li><a class="text-muted" href="cart.html">Cart</a></li>
+                        <li><a class="text-muted" href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="footerH">About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="contact.html">Contact/FAQ</a></li>
+                        <li><a class="text-muted" href="item.html">About Cozy Cafe</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous">
+            </script>
+
+</body>
+
+</html>

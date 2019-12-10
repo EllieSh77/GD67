@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,600|Righteous&display=swap|Open+Sans:400,600,700,800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Coustard:400,900&display=swap" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
+
+
+    <!-- JS -->
+    <script src="https://unpkg.com/konva@4.0.18/konva.min.js"></script>
+
+
+    <title>Ellie Shahriari / Web 3 / Final / Cozy Cafe </title>
+</head>
+
+
+<body>
+
+    <header>
+
+        <!--START NAVBAR-->
+
+        <nav class="navbar  navbar-expand-md navbar-dark  shadow-sm" style="background-color: #292621; ">
+
+            <!--<a class="navbar-brand p-0" href="#">CozyCafe</a>-->
+
+            <a href="index.html"></a><img src="images/LogoCozyCafe.png" width="173" height="120" class="d-inline-block align-top"
+                alt="Cozy Cafe" ></a>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="products.html">Shop</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkout.html">Checkout</a></li>
+
+                </ul>
+            </div>
+
+            
+           
+       
+   
+    <!--CART-->
+    <div class="navbar-nav ml-auto">
+            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i><span id="cartItems"
+                    class="pl-1">3</span></a>
+        </div>
+ <!--TOGGLER-->
+ <div class="navbar-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
+            aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+           <i class="fas fa-mug-hot fa-lg gray"></i>
+        </button>
+    </div>
+
+
+        
+    </nav>
+</header>
+
+<!--START MAIN CONTENT-->
+<main>
+    <section>
+      
+
+
+
+    <body class="bg-light">
+            <div class="container">
+                <div class="py-5 text-center">
+                       
+                    <h2>My Cart</h2>
+                    <p class="lead">Fresh Coffe, every day and fresh Beans every two weeks on your doorstep. Never run out of coffee again. Shipment is Free.</p>
+                </div>
+
+            <div class="row align-items-start">
+                <div class="col-12 col-sm-8">
+                    <!--ITEM 1-->
+                    <div class="cartItem row align-items-start">
+                        <div class="col-3 mb-2">
+                            <img class="w-100" src="images/Brew-Kits-product1.jpg" alt="Brew Kits">
+                        </div>
+                        <div class="col-5 mb-2">
+                            <h6 class="">5 Pices Brew Kits</h6>
+                        </div>
+                        <div class="col-2">
+                            <p class="cartItemQuantity p-1 text-center">1</p>
+                        </div>
+                        <div class="col-2">
+                            <p id="cartItem1Price">$25.99</p>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <div class="cartItem row align-items-start">
+                        <div class="col-3 mb-2">
+                            <img class="w-100" src="images/Coffee-Product-2.jpg" alt="Roasted Coffee">
+                        </div>
+                        <div class="col-5 mb-2">
+                            <h6 class="">Roasted Coffee</h6>
+                            <p class="pl-1 mb-0">Get 1 you get 1 free</p>
+                        </div>
+                        <div class="col-2">
+                            <p class="cartItemQuantity p-1 text-center">1</p>
+                        </div>
+                        <div class="col-2">
+                            <p id="cartItem1Price">$24.99</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="cartItem row align-items-start">
+                            <div class="col-3 mb-5">
+                                <img class="w-100" src="images/Handmade-Cup-Product-3.jpg" alt="Handmade Cup">
+                            </div>
+                            <div class="col-5 mb-2">
+                                <h6 class="">Handmade Cup</h6>
+                                <p class="pl-1 mb-0">Gift 4 Pices</p>
+                            </div>
+                            <div class="col-2">
+                                <p class="cartItemQuantity p-1 text-center">1</p>
+                            </div>
+                            <div class="col-2">
+                                <p id="cartItem1Price">$23.99</p>
+                            </div>
+                        </div>
+                </div>
+                
+                
+               
+                <div class="col-12 col-sm-4 p-3">
+                    <div class="row m-0">
+                        <div class="col-sm-8 p-0 ">
+                            <h6>Subtotal</h6>
+                        </div>
+                        <div class="col-sm-4 p-0">
+                            <p id="subtotal">$74.97</p>
+                        </div>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-sm-8 p-0 ">
+                            <h6>Tax</h6>
+                        </div>
+                        <div class="col-sm-4 p-0">
+                            <p id="tax">$7.97</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mx-0 mb-2">
+                        <div class="col-sm-8 p-0 d-inline">
+                            <h5>Total</h5>
+                        </div>
+                        <div class="col-sm-4 p-0">
+                            <p id="total">$82.94</p>
+                        </div>
+                    </div>
+                    <a href="checkout.html" class="link-btn btn-block text-center"><span>Place your Order</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</main>
+<!--FOOTER Start-->
+
+<footer class="container py-5 " style="background-color: #292621;">
+        <div class="row">
+            <div class="col-12 col-md text-center text-light">
+                <img src="images/LogoCozyCafe2.png" width="48" height="48"></img>
+                <small class="d-block mb-3 text-muted">© 2019-2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="footerH">Browse</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Products</a></li>
+                    <li><a class="text-muted" href="#">Most Popular</a></li>
+                    <li><a class="text-muted" href="#">Newest Designers</a></li>
+                   
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="footerH">Account</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Create Account</a></li>
+                    <li><a class="text-muted" href="#">Cart</a></li>
+                    <li><a class="text-muted" href="#">Checkout</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="footerH">About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Contact/FAQ</a></li>
+                    <li><a class="text-muted" href="#">About Cozy Cafe</a></li>
+                    <li><a class="text-muted" href="#">Privacy</a></li>
+                    <li><a class="text-muted" href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</main>
+
+        <!--FOOTER End-->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+
+
+<script>
+        var polys = document.querySelectorAll('polygon,polyline');
+        [].forEach.call(polys, convertPolyToPath);
+        function convertPolyToPath(poly) {
+            var svgNS = poly.ownerSVGElement.namespaceURI;
+            var path = document.createElementNS(svgNS, 'path');
+            var points = poly.getAttribute('points').split(/\s+|,/);
+            var x0 = points.shift(),
+                y0 = points.shift();
+            var pathdata = 'M' + x0 + ',' + y0 + 'L' + points.join(' ');
+            if (poly.tagName == 'polygon') pathdata += 'z';
+            path.setAttribute('d', pathdata);
+            poly.parentNode.replaceChild(path, poly);
+        }
+    </script>
+
+    <!--Draw SVG Function-->
+    <script>
+        var fSVG = $('#footerArt').drawsvg();
+        fSVG.drawsvg('animate');
+    </script>
+
+        </body>
+
+        </html>
