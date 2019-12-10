@@ -1,70 +1,62 @@
+var canvas = document.getElementById("Game");
+var ctx = canvas.getContext("2d");
 
+var ballX = canvas.width/2;
+var ballY = canvas.height/2;
+var ballColor = 'rgb(0, 155, 155)';
+var ballRadius = 50;
 
-      
-        var canvas = document.getElementById('canvas');
-var ctx = canvas.getContext('2d');
-var raf;
-var running = false;
+var speedX = 5;
+var speedY = 3;
 
-var ball = {
-  x: 100,
-  y: 100,
-  vx: 5,
-  vy: 1,
-  radius: 25,
-  color: 'blue',
-  draw: function() {
+var directionDown = true;
+var directionRight = true;
+
+function animate(){
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
     ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
-    ctx.closePath();
-    ctx.fillStyle = this.color;
+    ctx.fillStyle = ballColor;
+    ctx.strokeStyle = 'black';
+    ctx.arc(ballX, ballY, ballRadius, 0, 2*Math.PI);
     ctx.fill();
-  }
-};
+    ctx.stroke();
+    ctx.closePath();
 
-function clear() {
-  ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
-  ctx.fillRect(0,0,canvas.width,canvas.height);
+    if(ballX + ballRadius >= canvas.width || ballX - ballRadius <= 0 ) {
+        directionRight = !directionRight;
+    }
+
+    if(directionRight){
+        ballX = ballX + speedX;
+    }
+    else {
+        ballX = ballX - speedX;
+    }
+
+
+    if(ballY + ballRadius >= canvas.height || ballY - ballRadius <= 0) {
+        directionDown = !directionDown;
+    }
+    if(directionDown){
+        ballY = ballY + speedY;
+    }
+    else {
+        ballY = ballY - speedY;
+    }
+
+    window.requestAnimationFrame(animate);
 }
 
-function draw() {
-  clear();
-  ball.draw();
-  ball.x += ball.vx;
-  ball.y += ball.vy;
+animate();
 
-  if (ball.y + ball.vy > canvas.height || ball.y + ball.vy < 0) {
-    ball.vy = -ball.vy;
-  }
-  if (ball.x + ball.vx > canvas.width || ball.x + ball.vx < 0) {
-    ball.vx = -ball.vx;
-  }
+canvas.addEventListener("click", function(event){
 
-  raf = window.requestAnimationFrame(draw);
-}
+    var distX = Math.abs(ballX - event.clientX);
+    var distY = Math.abs(ballY - event.clientY);
 
-canvas.addEventListener('mousemove', function(e) {
-  if (!running) {
-    clear();
-    ball.x = e.clientX;
-    ball.y = e.clientY;
-    ball.draw();
-  }
-});
-
-canvas.addEventListener('click', function(e) {
-  if (!running) {
-    raf = window.requestAnimationFrame(draw);
-    running = true;
-  }
-});
-
-canvas.addEventListener('mouseout', function(e) {
-  window.cancelAnimationFrame(raf);
-  running = false;
-});
-
-ball.draw();
-       
-
-
+    if(distX < ballRadius && distY < ballRadius){
+        console.log('FIRE!!!!!!');
+    }
+})

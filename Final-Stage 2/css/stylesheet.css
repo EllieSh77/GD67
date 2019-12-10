@@ -245,3 +245,7 @@ canvas {
   right: 0;
   margin:auto;
 }
+
+.fa-shopping-cart:hover {
+  transform: rotate(-30deg)
+}
