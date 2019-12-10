@@ -228,3 +228,20 @@ footer h2 {
 #Coffee.konvajs-content {
   background-color: #6d5e47;
 }
+
+#canvas-container {
+  width: 100%;
+  text-align:center;
+}
+
+canvas {
+  display: inline;
+}
+#canvas {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+}
