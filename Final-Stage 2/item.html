@@ -145,7 +145,7 @@
                             </div>
                         </div>
 
-                        <button type="button" class="btn-cart btn-block p-2 mb-4 " id="addCart">ADD TO CART</button>
+                        <button type="button" class="btn-cart btn-block p-2 mb-4 "type="submit" id="addcart" onClick="alert('Not submited, shop more items');">ADD TO CART</button>
                     </form>
 
                     <ul>
@@ -263,7 +263,7 @@
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
  </script>
-
+<script src="css/script.js"></script>
 <script>
         $('.carousel').carousel({
             interval: 4000,
@@ -273,48 +273,7 @@
 
 
 
-    <!-- Add to Cart -->
-    <script>
-            var size = document.getElementById("selectItems");
-            var quantity = document.getElementById("selectQuantity")
-            var price = document.getElementById("price");
-            price.innerHTML = "$" + size.value;
-            size.innerHTML = function () {
-                price.innerHTML = "$" + (size.value * quantity.value);
-            }
-            quantity.onchange = function () {
-                price.innerHTML = "$" + (size.value * quantity.value);
-            }
-            var addItem = document.getElementById('addCart');
-            var items = document.getElementById('cartItems');
-    
-            var count = parseInt(items.innerHTML)
-    
-            addItem.addEventListener("click", function (event) {
-                 count = parseInt(items.innerHTML);
-                 items.innerHTML = count +parseInt(quantity.value);
-            });
-        
-        </script>
-
-
-    <!--Polyline converter-->
-    <script>
-        var polys = document.querySelectorAll('polygon,polyline');
-        [].forEach.call(polys, convertPolyToPath);
-        function convertPolyToPath(poly) {
-            var svgNS = poly.ownerSVGElement.namespaceURI;
-            var path = document.createElementNS(svgNS, 'path');
-            var points = poly.getAttribute('points').split(/\s+|,/);
-            var x0 = points.shift(),
-                y0 = points.shift();
-            var pathdata = 'M' + x0 + ',' + y0 + 'L' + points.join(' ');
-            if (poly.tagName == 'polygon') pathdata += 'z';
-            path.setAttribute('d', pathdata);
-            poly.parentNode.replaceChild(path, poly);
-        }
-    </script>
-
+   
 
 
 

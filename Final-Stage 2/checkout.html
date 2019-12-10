@@ -169,18 +169,7 @@
                             </div>
                         </div>
 
-                        <div class="mb-3">
-                            <label for="username">Username</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">@</span>
-                                </div>
-                                <input type="text" class="form-control" id="username" placeholder="Username" required>
-                                <div class="invalid-feedback" style="width: 100%;">
-                                    Your username is required.
-                                </div>
-                            </div>
-                        </div>
+                       
 
                         <div class="mb-3">
                             <label for="email">Email <span class="text-muted">(Optional)</span></label>
@@ -298,13 +287,16 @@
                             </div>
                         </div>
                         <hr class="mb-4">
-                        <button type="button" class="btn-cart btn-block p-2 mb-5 " id="addCart" type="submit">Continue to checkout</button>
+                        <button class="btn btn-dark btn-lg btn-block "  type="submit" id="submit" onClick="alert('Chech your informations');">Continue to checkout</button>
                     </form>
                 </div>
             </div>
-
+            <br>
+            <br>
         </div>
         
+                
+          
        
  <!--FOOTER Start-->
 <main>
@@ -357,26 +349,12 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
+ <script src="css/script.js"></script>
 
-<!-- FORM VALIDATION JS -->
 
-<script src="../js/form-validation.js"></script>
 
-<script>
-        var polys = document.querySelectorAll('polygon,polyline');
-        [].forEach.call(polys, convertPolyToPath);
-        function convertPolyToPath(poly) {
-            var svgNS = poly.ownerSVGElement.namespaceURI;
-            var path = document.createElementNS(svgNS, 'path');
-            var points = poly.getAttribute('points').split(/\s+|,/);
-            var x0 = points.shift(),
-                y0 = points.shift();
-            var pathdata = 'M' + x0 + ',' + y0 + 'L' + points.join(' ');
-            if (poly.tagName == 'polygon') pathdata += 'z';
-            path.setAttribute('d', pathdata);
-            poly.parentNode.replaceChild(path, poly);
-        }
-    </script>
+
+
 
         </body>
 

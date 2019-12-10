@@ -3,7 +3,7 @@ var ctx = canvas.getContext("2d");
 
 var ballX = canvas.width/2;
 var ballY = canvas.height/2;
-var ballColor = 'rgb(0, 155, 155)';
+var ballColor = "#292621";
 var ballRadius = 50;
 
 var speedX = 5;
@@ -13,7 +13,7 @@ var directionDown = true;
 var directionRight = true;
 
 function animate(){
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+    ctx.fillStyle = "#786f5e";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.beginPath();
